@@ -1,0 +1,261 @@
+:root
+{
+	/*Tables vars*/
+	--MainTableTitle-color: #fa7070;
+	--MainTableTitle-Textcolor: white;
+	
+	--SecondTableTitle-color: #3c3c3c;
+	--SecondTableTitle-Textcolor: white;
+	
+	--FirstCol-BgColor: #d0d0d0;
+	--FirstCol-TextColor: #4c4c4c;
+	
+	--Table_OddEven-rows-BgColor: #eaeaea !important;
+	--Table_OddEven-rows-TextColor: inherit !important;
+	
+	--CalendarInnerDutys-Border:solid black 1px !important;
+	--CalendarInnerDutys-BgColor: #fbfbfb !important;
+		--CalendarInnerDutys-TextColor: black !important;
+		
+	--CalendarDutysInnerGroupTable-BgColor: white !important;
+		--CalendarDutysInnerGroupTable-TextColor: black !important;
+		
+	--CalendarDutysInnerGroupTitle-BgColor: #6c6c6c !important;
+		--CalendarDutysInnerGroupTitle-TextColor: white !important;
+		
+	--ClanManagmentInnerDiv-BgColor: #e5e5e5 !important;
+		--ClanManagmentInnerDiv-TextColor: Black !important;
+	/*end Tables vars*/
+	
+	/*Text Blob and messages*/
+	--Error-color: #fa7070 !important;
+		--Error-Textcolor: White !important;
+	--Warning-color: #fff557 !important;
+		--Warning-Textcolor: Black !important;
+	--Approve-color: #8DE02E !important;
+		--Approve-Textcolor: Black !important;
+	--Message-color: #f6f6f6 !important;
+		--Message-Textcolor: Black !important;
+	/*End Text Blob and messages*/
+	
+	--Link: #063857 !important;
+	--Link_Visited: #063857 !important;
+	--Link_Hover: red !important;
+}
+
+div#tipDiv
+{
+    font-size:11px;
+	line-height:1.2;
+    color:#000;
+	background-color:#E1E5F1; 
+    border:1px solid #667295;
+	padding:4px;
+    width:280px;
+}
+
+div#tipDiv ul.tipContentList
+{
+    margin: .5em 0 1em 2em;
+    padding:0;
+}
+
+.Strike
+{
+	text-decoration: line-through;
+}
+
+.FRight
+{
+	float: right;
+	direction:rtl;
+}
+
+.FLeft
+{
+	float: left;
+	direction:rtl;
+}
+
+
+.Center
+{
+    margin: auto;
+    padding: 10px;
+	vertical-align: middle;
+}
+
+.Bold
+{
+	font-weight: bold;
+}
+
+.Underline
+{
+	text-decoration: underline;
+}
+
+.RoundCorners
+{
+	border-radius: 5px;
+	padding: 5px 10px;
+}
+
+.Message
+{
+	border-radius: 5px 20px 10px;
+	width:0px;
+	padding: 5px 10px;
+	background: var(--Message-color);
+	color: var(--Message-Textcolor);
+	font-size: 90%;
+	font-weight: bold;
+	display: inline;
+}
+
+.Error
+{
+	border-radius: 5px 20px 10px;
+	width:0px;
+	padding: 5px 10px;
+	background: var(--Error-color);
+	color: var(--Error-Textcolor);
+	font-size: 90%;
+	font-weight: bold;
+	display: inline;
+}
+.Warning
+{
+	border-radius: 5px 20px 10px;
+	width:0px;
+	padding: 5px 10px;
+	background: var(--Warning-color);
+	color: var(--Warning-Textcolor);
+	font-size: 90%;
+	font-weight: bold;
+	display: inline;
+}
+.Approve
+{
+	border-radius: 5px 20px 10px;
+	width:0px;
+	padding: 5px 10px;
+	background: var(--Approve-color);
+	color: var(--Approve-Textcolor);
+	font-size: 90%;
+	font-weight: bold;
+	display: inline;
+}
+
+/* calendar Css style*/
+#IsrTG_CalendarDiv td .PrevMonth
+{
+	text-align:center;
+	background:#9FA0A1;
+	cursor: default;
+	/*font-size: 80%;*/
+}
+
+#IsrTG_CalendarDiv td .CurrentMonth
+{
+	text-align:center;
+	background:#d0d0d0;
+	cursor: default;
+}
+
+#IsrTG_CalendarDiv td .NextMonth
+{
+	text-align:center;
+	background:#bcbdbe;
+	cursor: default;
+	color:black;
+}
+
+
+#IsrTG_CalendarDiv td .Today
+{
+	border: 3px solid #324253;
+	font-weight:bold;
+	background:white;
+	color:black;
+}
+
+#IsrTG_CalendarDiv td .Passed
+{
+	text-align:center;
+	cursor: default;
+}
+
+#IsrTG_CalendarDiv td .Future
+{
+	text-align:center;
+	background:#dadada;
+	cursor: default;
+	color:black;
+}
+
+#IsrTG_CalendarDiv td span
+{
+	height:100%;
+	width:100%;
+	color:#324253;
+	font-weight:bold;
+}
+
+#IsrTG_CalendarDiv #IsrTG_CalendarTable
+{
+	border-collapse: collapse;
+	text-align: center;
+	border: 0px solid black;
+	margin: 0px;
+}
+
+#IsrTG_CalendarDiv #IsrTG_CalendarTable #tableTitleSlider
+{
+	background:white;
+	color: black;
+}
+
+#IsrTG_CalendarDiv #IsrTG_CalendarTable #tableTitleSlider .monthSlider
+{
+	width:20px;
+	text-align:center;
+}
+
+#IsrTG_CalendarDiv #IsrTG_CalendarTable #tableTitleSlider .monthSlider a:link
+{
+	width:100%;
+	color:black;
+}
+#IsrTG_CalendarDiv #IsrTG_CalendarTable #tableTitleSlider .monthSlider a:hover
+{
+	width:100%;
+	color:red;
+}
+
+
+#IsrTG_CalendarDiv #IsrTG_CalendarTable #tableTitleSlider .tableTitle
+{
+	width:117px;
+	font-weight:bold;
+	text-align:center;
+	cursor: default;
+}
+
+#IsrTG_CalendarDiv #IsrTG_Inner_calendar_table
+{
+	border-collapse: collapse;
+	text-align: center;
+	border: 1px solid black;
+}
+
+#IsrTG_CalendarDiv #IsrTG_Inner_calendar_table .titleDay
+{
+	width:30px;
+	text-align:center;
+	font-weight:bold;
+	cursor: default;
+	background:black;
+	color: white;
+}
+/* End calendar Css style*/
