@@ -1,1 +1,0 @@
-<?php header("Location: /arma_fetch?".$_SERVER['QUERY_STRING']); ?>
